@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  body .main-wrapper {
+    overflow: hidden; }
+  body header {
+    color: #ececec;
+    font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-image: url("../img/header_background_v1.jpg");
+    background-size: cover;
+    height: 100vh; }
+    body header .top-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      body header .top-wrapper .logo img {
+        width: 40%; }
+    body header nav a {
+      border-right: 2px solid #607d8b;
+      padding: 15px 100px;
+      display: inline-block;
+      color: #ececec;
+      font-weight: 600;
+      text-decoration: none; }
+      body header nav a[target="_self"] {
+        margin: 0; }
+      body header nav a[href="#contact"] {
+        border-right: none; }
+    body header section {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body header section .btn {
+        font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+        text-decoration: none;
+        color: #ececec;
+        background: #01acac;
+        padding: 15px 60px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 29%; }
+  body main {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px 170px 20px 170px; }
+    body main .toolbar {
+      position: absolute;
+      right: 170px; }
+      body main .toolbar input[type="text"] {
+        padding: 5px 15px; }
+    body main section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      body main section h1 {
+        margin: 30px 0 0 0;
+        padding: 20px 0 0 0;
+        font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 24px; }
+      body main section article {
+        margin-bottom: 10px;
+        display: flex;
+        background: #efefef;
+        padding: 10px; }
+        body main section article div {
+          margin: 0 10px 30px 10px; }
+          body main section article div div {
+            padding: 0; }
+            body main section article div div .post-description {
+              font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+              font-size: 15px;
+              color: #e90303;
+              margin: 0; }
+            body main section article div div h3 {
+              font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+              font-size: 15px;
+              text-transform: uppercase;
+              color: #01acac;
+              position: relative;
+              width: 100%; }
+              body main section article div div h3:before {
+                position: absolute;
+                content: "";
+                height: 1px;
+                background-color: #607d8b;
+                width: 100%;
+                top: -25%; }
+            body main section article div div p {
+              font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+              font-size: 15px;
+              color: #000000;
+              line-height: 1.5; }
+          body main section article div button {
+            font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+            text-decoration: none;
+            color: #ececec;
+            background: #01acac;
+            padding: 15px 60px;
+            text-transform: uppercase;
+            border: none;
+            position: relative;
+            left: 72%; }
+    body main .about h1 {
+      position: relative;
+      left: 88%; }
+    body main .about p {
+      font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+      font-size: 15px;
+      color: #000000;
+      line-height: 1.5; }
+    body main .about img {
+      width: 100%; }
+    body main .contact-form h4 {
+      font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #000000; }
+    body main .contact-form form {
+      display: flex;
+      flex-direction: column; }
+      body main .contact-form form .user {
+        display: flex;
+        width: 100%; }
+      body main .contact-form form .user-name, body main .contact-form form .user-email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 5px;
+        width: 100%; }
+        body main .contact-form form .user-name input[type=text], body main .contact-form form .user-email input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 5px;
+          box-sizing: border-box; }
+        body main .contact-form form .user-name input[type=email], body main .contact-form form .user-email input[type=email] {
+          width: 100%;
+          padding: 12px 0;
+          margin: 8px 0;
+          box-sizing: border-box; }
+        body main .contact-form form .user-name label, body main .contact-form form .user-email label {
+          padding: 0 5px;
+          font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+          font-size: 15px;
+          color: #01acac; }
+      body main .contact-form form .area {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        body main .contact-form form .area label {
+          padding: 8px 5px;
+          font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+          font-size: 15px;
+          color: #01acac; }
+      body main .contact-form form .btn-form {
+        margin-left: auto; }
+        body main .contact-form form .btn-form input[type="submit"] {
+          margin-top: 20px;
+          border: none;
+          font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+          text-decoration: none;
+          color: #ececec;
+          background: #01acac;
+          padding: 15px 60px;
+          text-transform: uppercase; }
+  body footer {
+    background: white;
+    font-family: normal, "Roboto", "Ubuntu", "Cantarell", Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    font-size: 12px; }
+
+/*# sourceMappingURL=style1.css.map */

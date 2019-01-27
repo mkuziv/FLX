@@ -1,0 +1,212 @@
+@mixin main-font {
+    font-family: $fontText;
+    font-size: $meanFontSize;
+    text-transform: uppercase;
+}
+@mixin buttons {
+    font-family: $fontText;
+    text-decoration: none;
+    color: $btnTextCol;
+    background: $btnColor;
+    padding: 15px 60px;
+    text-transform: uppercase;
+}
+@mixin post-description {
+    font-family: $fontText;
+    font-size: $meanFontSize;    
+}
+body {    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    .main-wrapper{
+        overflow: hidden;
+    }
+    header {
+        color: $textColor;
+        @include main-font;
+        background-image: $backgroundHeader; 
+        background-size: cover; 
+        height: 100vh;
+        .top-wrapper {
+            display: flex;
+            justify-content: space-between;                                               
+            .logo {                               
+                img {
+                    width: 40%;
+                }
+            }
+        }
+        nav {
+            a {
+                border-right: 2px solid $borderRtColor;
+                padding: 15px 100px;
+                display: inline-block;
+                color: $textColor;
+                font-weight: 600;
+                text-decoration: none;
+                &[target="_self" ] {
+                    margin: 0;
+                }
+                &[href="#contact"]{
+                    border-right: none;
+                }                  
+            }
+        }
+        section {
+                width: $sectionWidth;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);                        
+            .btn {                
+                @include buttons;
+                position: absolute;
+                left: $btnLeft;                
+            }
+        }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        background: $mainBgColor;
+        padding: 10px 170px 20px 170px;
+        .toolbar {                     
+            position: absolute;
+            right: 170px;
+            input[type="text"]{
+                padding: 5px 15px;
+            }
+        }
+        section { 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;                       
+            h1{ 
+                margin:  30px 0 0 0;
+                padding: 20px 0 0 0;                              
+                @include main-font; 
+                color: $header1Color;
+                font-size: $h1size;               
+            }
+            article {
+                margin-bottom: 10px;
+                display: flex;
+                background: $backgroundArticle;
+                padding: 10px;
+                div {
+                    margin: 0 10px 30px 10px;
+                    div {
+                        padding: 0;
+                        .post-description {
+                            @include post-description;
+                            color:$headerDescriptColor;
+                            margin: 0;                                               
+                        }
+                        h3 {                            
+                            @include main-font;
+                            color: $h3Color;
+                            position: relative;
+                            width: 100%;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                height: 1px;
+                                background-color: $lineColor;
+                                width: 100%; 
+                                top: -25%;                                                               
+                            }     
+                        }
+                        p {
+                            @include post-description;
+                            color:$pDescriptColor;
+                            line-height: 1.5;
+                        }
+                    }
+                    button {
+                        @include buttons;
+                        border: none;                        
+                        position: relative;
+                        left: 72%;
+                    }
+                }
+            }
+        }
+        .about {            
+            h1 {
+                position:relative;
+                left: $h1Left;                
+            } 
+            p {
+                @include post-description;
+                color:$pDescriptColor;
+                line-height: 1.5;
+            }
+            img{
+                width: 100%;
+            }             
+        }
+        .contact-form { 
+            h4{
+                @include main-font;
+                color: $header1Color;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                .user{
+                    display: flex;
+                    width: 100%;
+                }
+                .user-name, .user-email{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin: 0 5px;
+                    width: 100%;
+                    input[type=text] {
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 8px 5px;
+                        box-sizing: border-box;
+                    }
+                    input[type=email] {
+                        width: 100%;
+                        padding: 12px 0;
+                        margin: 8px 0;
+                        box-sizing: border-box;                        
+                    }
+                    label {
+                        padding: 0 5px;
+                        @include post-description;
+                        color: $h3Color;
+                    }
+                }
+                .area{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    label{
+                        padding: 8px 5px;
+                        @include post-description;
+                        color: $h3Color;
+                    }
+                }
+                .btn-form{
+                    margin-left: auto;
+                    input[type="submit"] {
+                        margin-top: 20px;
+                        border: none;
+                        @include buttons;
+                    }
+                }
+            }            
+        }
+    }
+    footer{
+        background: $mainBgColor;
+        @include post-description;
+        color:$pDescriptColor;
+        font-size: 12px;
+    }
+}
