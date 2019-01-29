@@ -71,8 +71,7 @@ nav a {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     padding: 10px 40px;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 .text{
     background: #000000;    
@@ -225,7 +224,6 @@ nav a {
     cursor: pointer;
     font-size: 10px;
     padding: 0 3px;
-
 }
 footer{
     background: #FFFFFF;
@@ -280,8 +278,7 @@ h5{
     display: flex;
     justify-content: space-between;
     font-size: 10px;
-    margin: 1% 2%;
-    
+    margin: 1% 2%;    
 }
 .footer-nav::before{
     position: absolute;
