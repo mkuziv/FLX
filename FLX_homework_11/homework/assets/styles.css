@@ -1,0 +1,80 @@
+/* Your styles goes here */
+* {
+  margin : 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+#root {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-top: 15px;
+  padding: 20px;
+}
+.wrapper{
+  min-height: 400px;
+}
+header {
+  display: flex;
+  flex-direction: column;    
+}
+header h1 {
+  margin-top: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+header p {
+  text-align: center;
+  margin-top: 15px;
+  color: red;
+  display: none;
+}
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+form input{
+  width: 80%;
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+}
+form button {
+  display: block;
+  color: white;
+  background: black;
+  border: none;
+  margin-left: 10px;
+  height: 29px;
+  width: 29px;
+  border-radius: 25%;
+}
+.material-icons {
+  cursor: pointer;     
+}
+ul li{
+  list-style-type: none;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;  
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer img{
+  width: 60px;
+  height: 60px;
+}
